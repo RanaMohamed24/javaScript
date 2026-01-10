@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task7</title>
+</head>
+<body>
+    <h2>Enter Numbers Only</h2>
+    
+    <input type="text" id="numberInput">
+    
+    <p id="message"></p>
+    
+    <script>
+        var input = document.getElementById("numberInput");
+        var message = document.getElementById("message");
+        
+        input.onkeypress = function(event) {
+            var keyCode = event.keyCode || event.which;
+            var keyChar = String.fromCharCode(keyCode);
+            
+            if (keyChar < "0" || keyChar > "9") {
+                message.innerHTML = "Only numbers allowed!";
+                message.style.color = "red";
+                event.preventDefault();
+                return false;
+            } else {
+                message.innerHTML = "";
+            }
+        };
+        
+        
+    </script>
+</body>
+</html>

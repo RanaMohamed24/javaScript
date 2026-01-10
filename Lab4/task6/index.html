@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Key Press Detector</title>
+</head>
+<body>
+    <h2>Press any key to detect its ASCII code</h2>
+   
+    
+    <script>
+        document.onkeydown = function(event) {
+            var keyCode = event.keyCode || event.which;
+            var keyChar = event.key;
+            
+            var message = "Key Pressed: " + keyChar + "\n";
+            message += "Key Code: " + keyCode + "\n\n";
+            
+            var specialKeys = [];
+            
+            if (event.altKey) {
+                specialKeys.push("Alt");
+            }
+            if (event.ctrlKey) {
+                specialKeys.push("Ctrl");
+            }
+            if (event.shiftKey) {
+                specialKeys.push("Shift");
+            }
+            
+            if (keyCode === 18) {
+                message += "Alt key detected!";
+            }
+            else if (keyCode === 17) {
+                message += "Ctrl key detected!";
+            }
+            else if (keyCode === 16) {
+                message += "Shift key detected!";
+            }
+            else if (keyCode === 27) {
+                message += "Esc key detected!";
+            }
+            else if (specialKeys.length > 0) {
+                message += "Special keys: " + specialKeys.join(" + ");
+            }
+            else {
+                message += "No special key pressed";
+            }
+            
+            alert(message);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+     <style>
+        body {
+            background-color: #D4AF37;
+            font-family: Arial;
+            padding: 50px;
+        }
+        
+        table {
+            margin: 0 auto;
+        }
+        
+        td {
+            padding: 10px;
+            font-size: 18px;
+            color: #5C4033;
+        }
+        
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #999;
+            width: 250px;
+        }
+        
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            margin: 5px;
+            border: 2px solid #666;
+            background-color: #E5C68F;
+            cursor: pointer;
+        }
+        
+        #userTable {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #E5C68F;
+        }
+        
+        #userTable th {
+            background-color: #D4AF37;
+            border: 3px solid #5C4033;
+            padding: 15px;
+            font-size: 18px;
+            color: #000;
+        }
+        
+        #userTable td {
+            border: 3px solid #5C4033;
+            padding: 15px;
+            text-align: center;
+            background-color: #E5C68F;
+            color: #000;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        span {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Information Form</h2>
+    
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="nameInput" placeholder="enter name"></td>
+            <td><span id="nameMsg"></span></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" id="ageInput" placeholder="enter age"></td>
+            <td><span id="ageMsg"></span></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="text" id="emailInput" placeholder="enter email"></td>
+            <td><span id="emailMsg"></span></td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <button onclick="addUser()">Add</button>
+    <button onclick="resetForm()">Reset</button>
+    
+    <br><br>
+    
+    <div id="tableContainer" style="display: none;">
+        <table border="1" id="userTable">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>E-mail</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="form.js">
+      
+        
+        
+        
+        
+    </script>
+</body>
+</html>

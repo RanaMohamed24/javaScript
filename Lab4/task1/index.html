@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        body {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+        }
+        .box{
+            width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid #333;
+        }
+          .box:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box" style="background-color: #D4A216;">
+        <div class="box-label">Click to Generate<br>a new box with a new color</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
