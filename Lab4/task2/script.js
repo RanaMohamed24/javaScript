@@ -23,7 +23,7 @@ function EnterNumber(num) {
 function EnterOperator(operator) {
     var lastChar = inp.value[inp.value.length - 1];
     if (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/') {
-        inp.value = inp.value.slice(0, -1) + operator;  // استبدال
+        inp.value = inp.value.slice(0, -1) + operator;
     } else {
         inp.value += operator; 
     }
