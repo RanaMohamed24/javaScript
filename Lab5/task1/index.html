@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BOM Print Screen</title>
+</head>
+<body>
+  <p>Click the button to open the browser print screen.</p>
+
+  <button id="printBtn">Print Screen</button>
+
+  <script>
+    document.getElementById("printBtn").addEventListener("click", function () {
+      window.print();
+    });
+  </script>
+
+</body>
+</html>
